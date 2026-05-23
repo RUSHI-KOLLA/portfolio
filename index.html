@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kolla Rushikesh | Machine Learning Engineer</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Portfolio of Kolla Rushikesh, a Machine Learning Engineer specializing in Deep Learning, Knowledge Distillation, and high-performance neural architectures.">
+    <meta name="keywords" content="Kolla Rushikesh, Machine Learning Engineer, Deep Learning, AI Agent, YOLOv8, Knowledge Distillation, Python, TensorFlow, Bengaluru, Reva University">
+    <meta name="author" content="Kolla Rushikesh">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Kolla Rushikesh | Machine Learning Engineer">
+    <meta property="og:description" content="Portfolio of Kolla Rushikesh, a Machine Learning Engineer specializing in Deep Learning, Knowledge Distillation, and high-performance neural architectures.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="theme-cyber">
+    <!-- Interactive Background Canvas -->
+    <canvas id="neural-canvas"></canvas>
+
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="#" class="logo">
+                <span class="logo-accent">&lt;</span>R.Kolla<span class="logo-accent">/&gt;</span>
+            </a>
+            
+            <nav class="nav-links" id="nav-menu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#terminal" class="nav-link">Terminal</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-controls">
+                <!-- Theme Select Dropdown -->
+                <div class="theme-selector">
+                    <button class="theme-btn" id="theme-menu-btn" aria-label="Change Theme">
+                        <svg class="icon" viewBox="0 0 24 24" width="20" height="20">
+                            <path fill="currentColor" d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.38 5.38 0 0 1-4.4 2.26 5.4 5.4 0 0 1-4.14-9.5c.34-.14.7-.26 1.08-.34C13 3.03 12.5 3 12 3m0-2c6.07 0 11 4.93 11 11s-4.93 11-11 11S1 18.07 1 12 5.93 1 12 1z"/>
+                        </svg>
+                        <span class="theme-btn-text">Theme</span>
+                    </button>
+                    <div class="theme-dropdown" id="theme-dropdown">
+                        <button class="theme-opt active" data-theme="cyber">Cyberpunk Glow</button>
+                        <button class="theme-opt" data-theme="slate">Slate Minimal</button>
+                        <button class="theme-opt" data-theme="orchid">Light Orchid</button>
+                    </div>
+                </div>
+
+                <!-- Hamburger Menu for Mobile -->
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="content-wrapper">
+        
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="hero-content">
+                <div class="badge-container">
+                    <span class="hero-badge">Available for ML Internships</span>
+                </div>
+                <h1 class="hero-title">Kolla Rushikesh</h1>
+                <h2 class="hero-subtitle">Machine Learning Engineer</h2>
+                <p class="hero-tagline">
+                    Machine Learning Engineer crafting high-performance deep learning models and multi-agent AI architectures. Expert in feature engineering, model distillation, and deploying edge-ready AI solutions.
+                </p>
+                
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">
+                        View Projects
+                        <svg class="btn-icon" viewBox="0 0 24 24" width="18" height="18">
+                            <path fill="currentColor" d="M14 5l7 7-7 7-1.41-1.41L18.17 13H3v-2h15.17l-5.59-5.59L14 5z"/>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/RUSHI-KOLLA?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                        <svg class="btn-icon" viewBox="0 0 24 24" width="18" height="18">
+                            <path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/>
+                        </svg>
+                        GitHub Repos
+                    </a>
+                </div>
+
+                <div class="hero-socials">
+                    <a href="mailto:kollarushi2006@gmail.com" class="social-icon-link" title="Email Rushikesh">
+                        <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/kolla-rushikesh-4176232bb/" target="_blank" rel="noopener noreferrer" class="social-icon-link" title="LinkedIn Profile">
+                        <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.8v8.37h2.8v-4.67c0-.25.02-.5.1-.68a1.14 1.14 0 0 1 1-.77c.76 0 1 .58 1 1.42v4.7h2.8M6.5 8.37a1.37 1.37 0 1 0 0-2.75 1.37 1.37 0 0 0 0 2.75M8 18.5V10.13H5.2v8.37H8z"/></svg>
+                    </a>
+                    <a href="https://github.com/RUSHI-KOLLA" target="_blank" rel="noopener noreferrer" class="social-icon-link" title="GitHub Profile">
+                        <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Dashboard Analytics Preview Cards -->
+            <div class="hero-stats-grid">
+                <div class="stat-card glass-panel">
+                    <div class="stat-icon-wrapper ml-accent">
+                        <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/></svg>
+                    </div>
+                    <div class="stat-info">
+                        <h3 class="stat-value">231 FPS</h3>
+                        <p class="stat-label">TensorRT Weed Detection</p>
+                    </div>
+                </div>
+                <div class="stat-card glass-panel">
+                    <div class="stat-icon-wrapper agent-accent">
+                        <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                    </div>
+                    <div class="stat-info">
+                        <h3 class="stat-value">10 AI</h3>
+                        <p class="stat-label">Multi-Agent Debate Core</p>
+                    </div>
+                </div>
+                <div class="stat-card glass-panel">
+                    <div class="stat-icon-wrapper compression-accent">
+                        <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M19 13H5v-2h14v2z"/></svg>
+                    </div>
+                    <div class="stat-info">
+                        <h3 class="stat-value">56% Token</h3>
+                        <p class="stat-label">RAG Caching Optimization</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About/Summary Section -->
+        <section class="section scroll-reveal" id="about">
+            <h2 class="section-title">Professional Summary</h2>
+            <div class="about-container glass-panel">
+                <div class="about-text">
+                    <p class="paragraphhighlight">
+                        I am a Machine Learning Engineer with hands-on experience building, training, and optimizing ML/DL models—from feature engineering and dataset generation to compression and edge deployment.
+                    </p>
+                    <p>
+                        Equally comfortable leveraging AI-assisted development workflows to rapidly prototype, build, and deploy full-stack systems, I have designed multi-agent orchestration frameworks, implemented complex database scheduling algorithms, and crafted real-time video analytics models.
+                    </p>
+                    <p>
+                        With a deep understanding of computer vision distillation (YOLO architectures) and LLM pipeline optimizations (RAG caching, agent debators), I specialize in closing the gap between raw research and highly-performant production software.
+                    </p>
+                </div>
+                <div class="quick-facts">
+                    <h3 class="facts-title">Core Principles</h3>
+                    <ul class="facts-list">
+                        <li>
+                            <strong class="highlight-purple">Efficiency First:</strong> Focus on architectural compression (distillation, quantization, FP16 exports) to run DL at the edge.
+                        </li>
+                        <li>
+                            <strong class="highlight-blue">Agentic Workflows:</strong> Orchestrating LLMs into multi-agent networks to cross-verify answers and minimize hallucinations.
+                        </li>
+                        <li>
+                            <strong class="highlight-cyan">Full-Stack Capability:</strong> Coupling heavy ML backends with robust database models (PLpgSQL, PostgreSQL) and interactive frontends.
+                        </li>
+                        <li>
+                            <strong>AI-Assisted Velocity:</strong> Leveraging AI coding workflows to automate routine syntax generation, allowing more focus on system architecture, database design, and edge model optimization.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive AI Terminal Section -->
+        <section class="section scroll-reveal" id="terminal">
+            <h2 class="section-title">Interactive AI Core Console</h2>
+            <p class="section-subtitle">Query my digital profile by typing standard CLI commands. Click inside the terminal to focus.</p>
+            
+            <div class="terminal-container glass-panel" id="terminal-box">
+                <div class="terminal-header">
+                    <div class="terminal-buttons">
+                        <span class="term-dot close"></span>
+                        <span class="term-dot minimize"></span>
+                        <span class="term-dot expand"></span>
+                    </div>
+                    <div class="terminal-title">rushi@ai-core: ~ (bash)</div>
+                    <div class="terminal-status">ONLINE</div>
+                </div>
+                <div class="terminal-body" id="terminal-output">
+                    <div class="terminal-line text-info">Rushikesh AI-Core Profile Terminal [Version 1.0.0]</div>
+                    <div class="terminal-line text-muted">Type <span class="cmd-text">help</span> to view available commands.</div>
+                    <br>
+                    <div class="terminal-line">Welcome to the interactive resume terminal. Feel free to explore my capabilities.</div>
+                </div>
+                <div class="terminal-input-line">
+                    <span class="terminal-prompt">visitor@rushi-core:~$</span>
+                    <input type="text" id="terminal-input" aria-label="Terminal Input" autocomplete="off" spellcheck="false" autofocus>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Timeline Section -->
+        <section class="section scroll-reveal" id="experience">
+            <h2 class="section-title">Professional Experience</h2>
+            
+            <div class="timeline">
+                <!-- Suvidha Foundation Card -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-panel">
+                        <div class="timeline-header">
+                            <div>
+                                <span class="timeline-tag">Internship</span>
+                                <h3 class="timeline-role">Deep Learning Intern</h3>
+                                <h4 class="timeline-company">Suvidha Foundation</h4>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="timeline-date">Feb 2026 – Apr 2026</span>
+                                <span class="timeline-location">Remote</span>
+                            </div>
+                        </div>
+                        <div class="timeline-details">
+                            <p class="timeline-desc">
+                                Worked on advanced computer vision architectures for precision agriculture, focusing on lightweight model construction and intermediate layer feature distillation.
+                            </p>
+                            <ul class="timeline-bullets">
+                                <li>
+                                    <strong>AgroOJS Framework:</strong> Developed a multi-scale feature distillation framework for real-time weed detection, enabling edge deployment on resource-constrained drone hardware.
+                                </li>
+                                <li>
+                                    <strong>Knowledge Distillation:</strong> Trained a YOLOv8l teacher and distilled it into a compact YOLOv8s student via intermediate feature distillation at backbone layers 4, 6, and 9 using learnable 1x1 channel-alignment adapters. 
+                                    <span class="highlight-cyan font-semibold">Student outperformed the teacher's mAP50 by 4.1 percentage points (78.8% vs 74.7%).</span>
+                                </li>
+                                <li>
+                                    <strong>Weed-19 Benchmark:</strong> Consolidated the MH-Weed16 and CottonWeedDet12 datasets into a unified 19-class benchmark using bounding-box validation, duplicate resolution, and minority-class oversampling to 500 instances.
+                                </li>
+                                <li>
+                                    <strong>Interference Debugging:</strong> Identified a YOLO normalisation inconsistency (ImageNet vs [0,1] scaling). Proved that combining feature-level and KL-divergence distillation causes gradient conflict, disabling KL (gamma=0) to stabilize training.
+                                </li>
+                                <li>
+                                    <strong>Edge Speedup:</strong> Achieved <strong class="highlight-purple">231 FPS</strong> at 22.7 MB with TensorRT FP16 export (11x combined compression: 5.9x architectural + ~1.9x FP16) with zero accuracy degradation.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Grid Section -->
+        <section class="section scroll-reveal" id="projects">
+            <h2 class="section-title">Featured Projects</h2>
+            
+            <!-- Filters -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                <button class="filter-btn" data-filter="agent">AI Agents & LLMs</button>
+                <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+            </div>
+
+            <!-- Grid -->
+            <div class="projects-grid">
+                
+                <!-- VG Intelligence -->
+                <div class="project-card glass-panel" data-category="agent">
+                    <div class="project-header">
+                        <div class="project-title-wrapper">
+                            <h3 class="project-title">VG Intelligence</h3>
+                            <span class="project-status">Live</span>
+                        </div>
+                        <span class="project-date">May 2026</span>
+                    </div>
+                    <p class="project-description">
+                        A multi-agent debate platform orchestrating 10 AI agents (5 historical personas & 5 analytical roles) that engage in iterative debating rounds to synthesize high-confidence political insights.
+                    </p>
+                    <div class="project-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-val">56% Token</span>
+                            <span class="highlight-lbl">Reduction</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-val">38% Lower</span>
+                            <span class="highlight-lbl">Latency</span>
+                        </div>
+                    </div>
+                    <ul class="project-bullets-small">
+                        <li>Engineered a 7-stage pipeline (semantic caching, intent classification, hybrid RAG, judge synthesis).</li>
+                        <li>Implemented dense/sparse hybrid search with ChromaDB and convergence detection, cutting debate rounds by 50-70%.</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Groq LLM</span>
+                        <span class="tag">ChromaDB</span>
+                        <span class="tag">FastAPI</span>
+                        <span class="tag">RAG</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://vg-production-1df6.up.railway.app/" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                            Visit Platform
+                            <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+                        </a>
+                        <a href="https://github.com/RUSHI-KOLLA/vg" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                            GitHub Repository
+                            <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- VYUHA -->
+                <div class="project-card glass-panel" data-category="fullstack">
+                    <div class="project-header">
+                        <div class="project-title-wrapper">
+                            <h3 class="project-title">VYUHA — Master Timetable</h3>
+                            <span class="project-status">Live</span>
+                        </div>
+                        <span class="project-date">Apr 2026</span>
+                    </div>
+                    <p class="project-description">
+                        A full-stack master scheduling platform resolving multi-departmental constraints (faculty availability, classroom capacity, and overlapping core hours).
+                    </p>
+                    <div class="project-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-val">PLpgSQL</span>
+                            <span class="highlight-lbl">Core Solver</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-val">Real-time</span>
+                            <span class="highlight-lbl">Validation</span>
+                        </div>
+                    </div>
+                    <ul class="project-bullets-small">
+                        <li>Designed dynamic schemas with PostgreSQL to validate and lock resources instantly.</li>
+                        <li>Responsive administrator dash built with pure JavaScript communicating with a fast Python backend.</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">Vercel</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://vyuha-five.vercel.app" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                            Visit VYUHA
+                            <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+                        </a>
+                        <a href="https://github.com/RUSHI-KOLLA/VYUHA" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                            GitHub Repository
+                            <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- morgous -->
+                <div class="project-card glass-panel" data-category="ml">
+                    <div class="project-header">
+                        <div class="project-title-wrapper">
+                            <h3 class="project-title">morgous — YOLOv8 Weed KD Pipeline</h3>
+                        </div>
+                        <span class="project-date">Mar 2026</span>
+                    </div>
+                    <p class="project-description">
+                        A deep learning pipeline that compresses a high-accuracy YOLOv8l weed detector into a lightweight YOLOv8s model using Knowledge Distillation (KD), then exports it in multiple quantized formats for edge deployment.
+                    </p>
+                    <div class="project-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-val">Teacher-Student</span>
+                            <span class="highlight-lbl">YOLOv8l → YOLOv8s</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-val">19 Classes</span>
+                            <span class="highlight-lbl">Merged Weed Dataset</span>
+                        </div>
+                    </div>
+                    <ul class="project-bullets-small">
+                        <li>Fuses Cotton-Weed-12 and MH-Weed16 datasets, resolving duplicate classes and oversampling minority classes to 500+ samples.</li>
+                        <li>Configures a two-component KD loss (detection + feature MSE) using learnable 1x1 conv channel-alignment adapters.</li>
+                        <li>Exports and benchmarks the student model in TorchScript, ONNX, and TensorRT formats for high-speed edge devices.</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="tag">Jupyter Notebook</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">PyTorch</span>
+                        <span class="tag">YOLOv8</span>
+                        <span class="tag">TensorRT</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/RUSHI-KOLLA/morgous" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                            GitHub Repository
+                            <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Health & Nutrition Agent -->
+                <div class="project-card glass-panel" data-category="agent">
+                    <div class="project-header">
+                        <div class="project-title-wrapper">
+                            <h3 class="project-title">Health Nutrition Advisor Agent</h3>
+                        </div>
+                        <span class="project-date">Dec 2025</span>
+                    </div>
+                    <p class="project-description">
+                        AI-powered health nutrition assistant built using Google ADK and Gemini models to provide diet suggestions and guidelines based on user symptoms.
+                    </p>
+                    <div class="project-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-val">Google ADK</span>
+                            <span class="highlight-lbl">Agent Architecture</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-val">Real-time Search</span>
+                            <span class="highlight-lbl">Gemini & Google CSE</span>
+                        </div>
+                    </div>
+                    <ul class="project-bullets-small">
+                        <li>Provides tailored diet suggestions for conditions like Fever, Acidity, Digestion issues, Low Iron, and Low Sodium.</li>
+                        <li>Uses Custom Search Engine ID (Google CSE) via ADK's Search Tool to retrieve accurate, updated nutritional info.</li>
+                        <li>Maintains session memory and supports both a command line interface and a web UI (`adk web`).</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="tag">Google ADK</span>
+                        <span class="tag">Gemini API</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Custom Search</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/RUSHI-KOLLA/Health-Nutrition-Agent" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                            GitHub Repository
+                            <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- GitHub CTA Card -->
+                <div class="project-card glass-panel git-cta-card">
+                    <div class="git-cta-content">
+                        <div class="git-icon-wrapper">
+                            <svg viewBox="0 0 24 24" width="48" height="48"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+                        </div>
+                        <h3>Explore More Repositories</h3>
+                        <p>View my full profile, open-source work, and code patterns on GitHub.</p>
+                        <a href="https://github.com/RUSHI-KOLLA?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn btn-primary git-cta-btn">
+                            Visit My GitHub
+                            <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M5 13h11.86l-5.43 5.43 1.42 1.42L21 12l-8.15-8.15-1.42 1.42 5.43 5.43H5v2z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Skills Matrix Section -->
+        <section class="section scroll-reveal" id="skills">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                
+                <!-- ML / Deep Learning -->
+                <div class="skills-category glass-panel">
+                    <h3 class="category-title">
+                        <svg class="cat-icon" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.75z"/></svg>
+                        ML & Deep Learning
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item-card">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 95%;"></div></div>
+                        </div>
+                        <div class="skill-item-card">
+                            <span class="skill-name">TensorFlow & Keras</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+                        </div>
+                        <div class="skill-item-card">
+                            <span class="skill-name">Scikit-learn</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+                        </div>
+                        <div class="skill-item-card">
+                            <span class="skill-name">Pandas & NumPy</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 95%;"></div></div>
+                        </div>
+                        <div class="skill-item-card">
+                            <span class="skill-name">TensorRT Edge Comp.</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Concepts -->
+                <div class="skills-category glass-panel">
+                    <h3 class="category-title">
+                        <svg class="cat-icon" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM5.89 12.5L12 15.82l6.11-3.32L12 9.18 5.89 12.5zM12 21c-3.11 0-5.85-1.59-7.46-4H2.46c1.83 3.52 5.51 6 9.54 6s7.71-2.48 9.54-6h-2.08c-1.61 2.41-4.35 4-7.46 4z"/></svg>
+                        Core Concepts
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item-card">
+                            <span class="skill-name">Machine Learning</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+                        </div>
+                        <div class="skill-item-card">
+                            <span class="skill-name">Deep Learning</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 88%;"></div></div>
+                        </div>
+                        <div class="skill-item-card">
+                            <span class="skill-name">Prompt Engineering</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+                        </div>
+                        <div class="skill-item-card">
+                            <span class="skill-name">AI-Assisted Development</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 95%;"></div></div>
+                        </div>
+                        <div class="skill-item-card">
+                            <span class="skill-name">Data Structures & OOPs</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="skills-category glass-panel">
+                    <h3 class="category-title">
+                        <svg class="cat-icon" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M22.7 19l-9.1-9.1c.9-2.1.4-4.7-1.5-6.6-2-2-5.1-2.4-7.5-.9l4.7 4.7-3 3-4.7-4.7c-1.5 2.4-1.1 5.6.9 7.5 1.9 1.9 4.5 2.4 6.6 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.1-2.1c.4-.4.4-1 0-1.4z"/></svg>
+                        Tools & Environments
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item-card">
+                            <span class="skill-name">GitHub / Git</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+                        </div>
+                        <div class="skill-item-card">
+                            <span class="skill-name">VS Code</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 95%;"></div></div>
+                        </div>
+                        <div class="skill-item-card">
+                            <span class="skill-name">Jupyter Notebooks</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+                        </div>
+                        <div class="skill-item-card">
+                            <span class="skill-name">PostgreSQL / SQL</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 82%;"></div></div>
+                        </div>
+                        <div class="skill-item-card">
+                            <span class="skill-name">FastAPI / Web APIs</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Education & Certifications Section -->
+        <section class="section scroll-reveal" id="education">
+            <h2 class="section-title">Education & Certifications</h2>
+            
+            <div class="edu-cert-container">
+                <!-- Education Grid -->
+                <div class="edu-column">
+                    <h3 class="sub-section-title">Education</h3>
+                    <div class="edu-cards">
+                        <!-- Reva University -->
+                        <div class="edu-card glass-panel">
+                            <div class="edu-header">
+                                <h4 class="edu-degree">B.Tech in Computer Science & Engineering</h4>
+                                <span class="edu-period">Expected: 2027</span>
+                            </div>
+                            <h5 class="edu-inst">Reva University, Bengaluru, India</h5>
+                            <p class="edu-coursework">
+                                <strong>Coursework:</strong> Machine Learning, Deep Learning, Data Structures, DBMS (SQL), Pattern Recognition.
+                            </p>
+                        </div>
+                        
+                        <!-- Narayana Junior College -->
+                        <div class="edu-card glass-panel">
+                            <div class="edu-header">
+                                <h4 class="edu-degree">Intermediate (Class XII)</h4>
+                                <span class="edu-period">2023</span>
+                            </div>
+                            <h5 class="edu-inst">Narayana Junior College, Andhra Pradesh, India</h5>
+                            <p class="edu-score"><strong>Final Score:</strong> 81.6%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certifications Grid -->
+                <div class="cert-column">
+                    <h3 class="sub-section-title">Certifications</h3>
+                    <div class="cert-cards">
+                        <!-- Google Kaggle -->
+                        <div class="cert-card glass-panel">
+                            <div class="cert-icon-wrapper">
+                                <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+                            </div>
+                            <div class="cert-details">
+                                <h4 class="cert-title">5-Day AI Agents Intensive Course</h4>
+                                <h5 class="cert-issuer">Google & Kaggle</h5>
+                                <span class="cert-date">Dec 2025</span>
+                            </div>
+                        </div>
+
+                        <!-- Infosys Springboard -->
+                        <div class="cert-card glass-panel">
+                            <div class="cert-icon-wrapper">
+                                <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                            </div>
+                            <div class="cert-details">
+                                <h4 class="cert-title">Design Pattern Classification & Architectural Patterns</h4>
+                                <h5 class="cert-issuer">Infosys Springboard</h5>
+                                <span class="cert-date">Oct 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section scroll-reveal" id="contact">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Have an internship opportunity, project collaboration, or ML problem to solve? Write to me!</p>
+            
+            <div class="contact-wrapper">
+                <div class="contact-info-panel glass-panel">
+                    <h3>Contact Information</h3>
+                    <p>I am currently based in Bengaluru, India and open to both on-site and remote opportunities.</p>
+                    
+                    <div class="info-details">
+                        <div class="info-item">
+                            <span class="info-icon">
+                                <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                            </span>
+                            <a href="mailto:kollarushi2006@gmail.com">kollarushi2006@gmail.com</a>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">
+                                <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M6.62 10.79a15.149 15.149 0 0 0 6.59 6.59l2.2-2.2c.28-.28.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                            </span>
+                            <a href="tel:+918074323965">+91-8074323965</a>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">
+                                <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                            </span>
+                            <span>Bengaluru, Karnataka, India</span>
+                        </div>
+                    </div>
+
+                    <div class="connect-socials">
+                        <a href="https://www.linkedin.com/in/kolla-rushikesh-4176232bb/" target="_blank" rel="noopener noreferrer" class="social-circle">
+                            <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.8v8.37h2.8v-4.67c0-.25.02-.5.1-.68a1.14 1.14 0 0 1 1-.77c.76 0 1 .58 1 1.42v4.7h2.8M6.5 8.37a1.37 1.37 0 1 0 0-2.75 1.37 1.37 0 0 0 0 2.75M8 18.5V10.13H5.2v8.37H8z"/></svg>
+                        </a>
+                        <a href="https://github.com/RUSHI-KOLLA" target="_blank" rel="noopener noreferrer" class="social-circle">
+                            <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-actions-panel glass-panel">
+                    <h3>Instant Connect Channels</h3>
+                    <p>Skip the forms. Click any option below to reach me instantly through your preferred channel.</p>
+                    
+                    <div class="contact-actions-grid">
+                        <!-- WhatsApp Link -->
+                        <a href="https://wa.me/918074323965" target="_blank" rel="noopener noreferrer" class="contact-action-card whatsapp">
+                            <div class="contact-action-icon">
+                                <svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm0 1.66c2.2 0 4.27.86 5.82 2.41 1.55 1.55 2.41 3.63 2.41 5.84 0 4.55-3.7 8.25-8.24 8.25-1.5 0-2.97-.41-4.26-1.18l-.3-.18-3.16.83.85-3.09-.2-.32a8.192 8.192 0 0 1-1.25-4.32c.01-4.55 3.71-8.24 8.25-8.25zm-2.07 4.19c-.28 0-.58.11-.79.35-.21.24-.8.78-.8 1.9s.82 2.2 1.04 2.5c.22.3 1.62 2.48 3.93 3.48.55.24 1.13.43 1.52.55.55.18 1.06.15 1.46.09.45-.07 1.38-.56 1.58-1.11.2-.55.2-1.02.14-1.11-.06-.1-.23-.15-.5-.29-.26-.14-1.58-.78-1.83-.87-.25-.09-.43-.14-.61.14-.18.28-.7 1-.86 1.19-.16.19-.32.21-.59.07-.27-.14-1.14-.42-2.17-1.34-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.42.12-.56.12-.12.27-.3.41-.45.14-.15.19-.26.29-.44.1-.18.05-.35-.02-.49-.07-.14-.61-1.47-.84-2.02-.22-.54-.44-.47-.61-.47z"/></svg>
+                            </div>
+                            <span class="contact-action-title">WhatsApp</span>
+                            <span class="contact-action-subtitle">Instant Chat</span>
+                        </a>
+
+                        <!-- LinkedIn Link -->
+                        <a href="https://www.linkedin.com/in/kolla-rushikesh-4176232bb/" target="_blank" rel="noopener noreferrer" class="contact-action-card linkedin">
+                            <div class="contact-action-icon">
+                                <svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.8v8.37h2.8v-4.67c0-.25.02-.5.1-.68a1.14 1.14 0 0 1 1-.77c.76 0 1 .58 1 1.42v4.7h2.8M6.5 8.37a1.37 1.37 0 1 0 0-2.75 1.37 1.37 0 0 0 0 2.75M8 18.5V10.13H5.2v8.37H8z"/></svg>
+                            </div>
+                            <span class="contact-action-title">LinkedIn</span>
+                            <span class="contact-action-subtitle">Direct Message</span>
+                        </a>
+
+                        <!-- Email Link -->
+                        <a href="mailto:kollarushi2006@gmail.com" class="contact-action-card email">
+                            <div class="contact-action-icon">
+                                <svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                            </div>
+                            <span class="contact-action-title">Email</span>
+                            <span class="contact-action-subtitle">kollarushi2006@gmail.com</span>
+                        </a>
+
+                        <!-- Call Link -->
+                        <a href="tel:+918074323965" class="contact-action-card call">
+                            <div class="contact-action-icon">
+                                <svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M6.62 10.79a15.149 15.149 0 0 0 6.59 6.59l2.2-2.2c.28-.28.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                            </div>
+                            <span class="contact-action-title">Phone Call</span>
+                            <span class="contact-action-subtitle">+91-8074323965</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <p>&copy; 2026 Kolla Rushikesh. Built with Vanilla Web Tech. Powered by AI-Assisted Workflows.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
