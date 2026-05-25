@@ -253,7 +253,7 @@ production-ready AI agents.`,
         
         projects: `<b>FEATURED SCHEMATIC PROJECTS:</b>
 -------------------------------------------------------------------
-1. <b>VG Intelligence:</b> Multi-agent debate platform (10 AI agents). Live at: https://vg-production-1df6.up.railway.app
+1. <b>VG Intelligence:</b> Multi-agent debate platform (10 AI agents). Live at: https://vg-bzwz.onrender.com/
 2. <b>VYUHA Master Timetable:</b> Relational database scheduling platform. Live at: https://vyuha-five.vercel.app
 3. <b>morgous:</b> YOLOv8 knowledge distillation weed detection pipeline. Repo: https://github.com/RUSHI-KOLLA/morgous
 4. <b>Health Nutrition Advisor Agent:</b> Google ADK & Gemini diet advisor. Repo: https://github.com/RUSHI-KOLLA/Health-Nutrition-Agent`,
