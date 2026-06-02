@@ -1,1 +1,1 @@
-**[(link of portfolio)(https://rushi-kolla.github.io/portfolio/)]**
+**[link of portfolio](https://rushi-kolla.github.io/portfolio/)**
