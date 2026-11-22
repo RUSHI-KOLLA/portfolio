@@ -12,7 +12,7 @@
 
 const PROFILE_DATA = {
     name: "Kolla Rushikesh",
-    subtitle: "I build production-ready AI applications, multi-agent systems, and edge-distilled neural models 🧠🤖⚡",
+    subtitle: "CS undergrad (B.Tech 2027) who learns by building, from multi-agent LLM systems to efficient vision models. IEEE-published author",
     photo: "assets/me.jpg",
     location: "Bengaluru, India",
     email: "kollarushi2006@gmail.com",
@@ -85,8 +85,7 @@ const PROJECTS_DATA = [
         subtitle: "Nano CNN-LSTM Anomaly Localisation for Smart Grids",
         desc: "Novel ultralightweight CNN-LSTM hybrid architecture for detecting unauthorized electricity theft and consumption spikes directly on edge smart meters with constrained memory budgets. Published in IEEE Xplore.",
         links: [
-            { label: "IEEE Xplore", url: "https://ieeexplore.ieee.org/document/11754428" },
-            { label: "GitHub", url: "https://github.com/RUSHI-KOLLA" }
+            { label: "IEEE Xplore", url: "https://ieeexplore.ieee.org/document/11754428" }
         ],
         tags: ["PyTorch", "CNN-LSTM", "Time-Series", "Anomaly Detection", "IEEE Xplore"]
     },
