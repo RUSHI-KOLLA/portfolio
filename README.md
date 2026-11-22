@@ -2,7 +2,7 @@
 
 [![Live Site](https://img.shields.io/badge/Live_Portfolio-GitHub_Pages-2563eb?style=for-the-badge)](https://rushi-kolla.github.io/portfolio/)
 
-Clean, minimalist academic & engineering portfolio inspired by [Andrej Karpathy's website](https://karpathy.ai/).
+Clean, minimalist academic & engineering portfolio.
 
 👉 **Live Site:** [https://rushi-kolla.github.io/portfolio/](https://rushi-kolla.github.io/portfolio/)
 

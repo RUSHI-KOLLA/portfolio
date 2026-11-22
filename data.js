@@ -34,7 +34,7 @@ const TIMELINE_DATA = [
         desc: `Building and shipping production AI systems:
         <ul>
           <li><b><a href="https://huggingface.co/spaces/kollarushi/vg" target="_blank">VG Intelligence</a></b>: Built an autonomous multi-agent political forecasting platform orchestrating 10 AI agents in 15 days. Implemented a 7-stage optimization pipeline (semantic caching, intent classification, hybrid RAG with ChromaDB, convergence detection) cutting token usage by 56% and latency by 38%. Deployed live on Hugging Face Spaces.</li>
-          <li><b><a href="https://ieeexplore.ieee.org/" target="_blank">IEEE Publication</a></b>: First author of <i>HEAL: High-Efficiency Anomaly Localisation for Electricity Theft Detection via Nano CNN-LSTM Architectures</i>, presented at the 4th IEEE International Conference on Networks, Multimedia and Information Technology (NMITCON-2026).</li>
+          <li><b><a href="https://ieeexplore.ieee.org/document/11754428" target="_blank">IEEE Publication</a></b>: First author of <i>HEAL: High-Efficiency Anomaly Localisation for Electricity Theft Detection via Nano CNN-LSTM Architectures</i>, presented at the 4th IEEE International Conference on Networks, Multimedia and Information Technology (NMITCON-2026).</li>
         </ul>`
     },
     {
@@ -85,7 +85,7 @@ const PROJECTS_DATA = [
         subtitle: "Nano CNN-LSTM Anomaly Localisation for Smart Grids",
         desc: "Novel ultralightweight CNN-LSTM hybrid architecture for detecting unauthorized electricity theft and consumption spikes directly on edge smart meters with constrained memory budgets. Published in IEEE Xplore.",
         links: [
-            { label: "IEEE Xplore", url: "https://ieeexplore.ieee.org/" },
+            { label: "IEEE Xplore", url: "https://ieeexplore.ieee.org/document/11754428" },
             { label: "GitHub", url: "https://github.com/RUSHI-KOLLA" }
         ],
         tags: ["PyTorch", "CNN-LSTM", "Time-Series", "Anomaly Detection", "IEEE Xplore"]
@@ -128,7 +128,7 @@ const PUBLICATIONS_DATA = [
         publisher: "IEEE Xplore",
         year: "2026",
         notes: "Technically co-sponsored by IEEE Bangalore Section",
-        url: "https://ieeexplore.ieee.org/"
+        url: "https://ieeexplore.ieee.org/document/11754428"
     }
 ];
 
